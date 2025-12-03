@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- =========================================
+       Guss Sys - Página corporativa
+       Autor: Daniel (para Guss Sys)
+       Estructura HTML separada del CSS
+       Tema: Oscuro, gráfico, profesional
+       Nota: Solo 3 apartados para fotos (ver sección "Portafolio")
+       ========================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guss Sys | Corporación de Programadores Frontend & Backend</title>
+  <meta name="description" content="Guss Sys es una pequeña corporación de programadores especializados en frontend y backend. Diseño, sistemas y experiencias digitales de alto impacto.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ========= Preloader minimal ========= -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-icon"></div>
+    <span class="loader-text">Cargando Guss Sys...</span>
+  </div>
+
+  <!-- ========= Efectos de fondo con SVG y gradientes ========= -->
+  <svg class="bg-shape bg-shape--1" viewBox="0 0 800 600" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="grad1" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="100%" stop-color="#1f2937"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,0 L800,0 L800,600 L0,600 Z" fill="url(#grad1)"></path>
+    <circle cx="120" cy="120" r="180" class="bg-pulse"></circle>
+    <circle cx="680" cy="520" r="120" class="bg-pulse"></circle>
+  </svg>
+
+  <svg class="bg-shape bg-shape--2" viewBox="0 0 800 600" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="grad2" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#0b1220"/>
+        <stop offset="100%" stop-color="#111827"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,0 L800,0 L800,600 L0,600 Z" fill="url(#grad2)"></path>
+    <rect x="560" y="60" width="160" height="160" rx="24" class="bg-glow"></rect>
+    <rect x="40" y="380" width="220" height="140" rx="24" class="bg-glow"></rect>
+  </svg>
+
+  <!-- ========= Navbar flotante ========= -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="brand-mark">G</div>
+      <div class="brand-text">
+        <strong>Guss Sys</strong>
+        <span>Frontend & Backend</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#portafolio" class="nav-link">Portafolio</a>
+      <a href="#stack" class="nav-link">Stack</a>
+      <a href="#casos" class="nav-link">Casos</a>
+      <a href="#equipo" class="nav-link">Equipo</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+    <button class="nav-cta">Cotiza tu proyecto</button>
+    <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="mobile-panel" role="dialog" aria-modal="true" aria-label="Menú móvil">
+      <a href="#inicio" class="mobile-link">Inicio</a>
+      <a href="#nosotros" class="mobile-link">Nosotros</a>
+      <a href="#servicios" class="mobile-link">Servicios</a>
+      <a href="#portafolio" class="mobile-link">Portafolio</a>
+      <a href="#stack" class="mobile-link">Stack</a>
+      <a href="#casos" class="mobile-link">Casos</a>
+      <a href="#equipo" class="mobile-link">Equipo</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+      <button class="mobile-cta">Cotiza</button>
+    </div>
+  </header>
+
+  <!-- ========= Hero / Inicio ========= -->
+  <section id="inicio" class="section hero">
+    <div class="hero-content">
+      <h1 class="title-xl">Experiencias digitales con precisión de ingeniería</h1>
+      <p class="subtitle-md">
+        En Guss Sys creamos productos web escalables y hermosos. Combinamos diseño frontend meticuloso con arquitectura backend confiable.
+      </p>
+      <div class="hero-actions">
+        <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+        <a href="#contacto" class="btn btn-secondary">Habla con nosotros</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-value">+38</span>
+          <span class="stat-label">Proyectos entregados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">99.98%</span>
+          <span class="stat-label">Uptime en producción</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">1.6s</span>
+          <span class="stat-label">TTI promedio</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">A+</span>
+          <span class="stat-label">Auditoría Lighthouse</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="grid-visual">
+        <div class="cell cell-a"></div>
+        <div class="cell cell-b"></div>
+        <div class="cell cell-c"></div>
+        <div class="cell cell-d"></div>
+        <div class="cell cell-e"></div>
+        <div class="cell cell-f"></div>
+      </div>
+      <div class="ring-visual">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= Nosotros ========= -->
+  <section id="nosotros" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Pequeña corporación, gran impacto</h2>
+      <p class="subtitle-sm">
+        Somos un equipo compacto de programadores que ama la ingeniería de detalle. Menos burocracia, más resultados. Integramos frontend, backend y producto.
+      </p>
+    </div>
+    <div class="content-grid">
+      <article class="info-card">
+        <h3 class="card-title">Nuestra misión</h3>
+        <p class="card-text">
+          Resolver problemas reales con software elegante. Optimizamos el rendimiento, la accesibilidad y la seguridad desde el primer commit.
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Calidad:</strong> Pruebas, CI/CD y estándares estrictos.</li>
+          <li><strong>Velocidad:</strong> Sprints cortos, entregas previsibles.</li>
+          <li><strong>Confianza:</strong> Comunicación transparente y continua.</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3 class="card-title">Lo que nos diferencia</h3>
+        <p class="card-text">
+          UI/UX con criterio y microinteracciones útiles. Backend robusto con observabilidad y buenas prácticas. Documentación completa y mantenible.
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Frontend:</strong> Diseño responsivo, accesibilidad AA/AAA.</li>
+          <li><strong>Backend:</strong> Arquitecturas modulares y seguras.</li>
+          <li><strong>DevOps:</strong> Pipelines reproducibles y entornos aislados.</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3 class="card-title">Valores</h3>
+        <p class="card-text">
+          Simplicidad, responsabilidad y mejora continua. Cada línea de código sostiene un producto que debe durar, escalar y ser entendible.
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Claridad:</strong> Código legible y patrones consistentes.</li>
+          <li><strong>Rendimiento:</strong> Métricas y presupuestos de performance.</li>
+          <li><strong>Seguridad:</strong> Hardening y revisión de dependencias.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= Servicios ========= -->
+  <section id="servicios" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Servicios especializados</h2>
+      <p class="subtitle-sm">Soluciones a medida con enfoque integral en cada capa del producto.</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon service-icon--frontend"></div>
+        <h3 class="card-title">Frontend de alto nivel</h3>
+        <p class="card-text">
+          Interfaces modernas con frameworks como React, Vue y Svelte. Animaciones, accesibilidad y rendimiento optimizado.
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Diseño:</strong> Sistemas de componentes escalables.</li>
+          <li><strong>Performance:</strong> Code splitting y caching inteligente.</li>
+          <li><strong>Accesibilidad:</strong> Semántica y navegación con teclado.</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-icon service-icon--backend"></div>
+        <h3 class="card-title">Backend confiable</h3>
+        <p class="card-text">
+          APIs seguras y eficientes con Node.js, Python y Go. Arquitectura limpia, validaciones y logs útiles.
+        </p>
+        <ul class="bullet-list">
+          <li><strong>API:</strong> REST/GraphQL con control de versiones.</li>
+          <li><strong>Datos:</strong> SQL/NoSQL, migraciones y backups.</li>
+          <li><strong>Seguridad:</strong> Auth, rate limit y auditoría.</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-icon service-icon--devops"></div>
+        <h3 class="card-title">DevOps y entrega</h3>
+        <p class="card-text">
+          Infraestructura reproducible, CI/CD y monitoreo. Despliegues predecibles en contenedores y nubes públicas.
+        </p>
+        <ul class="bullet-list">
+          <li><strong>CI/CD:</strong> Pipelines con pruebas automatizadas.</li>
+          <li><strong>Observabilidad:</strong> Métricas, logs y alertas.</li>
+          <li><strong>Escala:</strong> Contenedores, orquestación y edge.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="cta-panel">
+      <div class="cta-text">
+        <h3 class="card-title">¿Listo para empezar?</h3>
+        <p class="card-text">Cuéntanos tu idea y te proponemos un plan claro, con tiempos y entregables definidos.</p>
+      </div>
+      <a href="#contacto" class="btn btn-primary">Solicitar propuesta</a>
+    </div>
+  </section>
+
+  <!-- ========= Portafolio (Único apartado con fotos: 3) ========= -->
+  <section id="portafolio" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Portafolio</h2>
+      <p class="subtitle-sm">Tres proyectos destacados con enfoque en diseño, rendimiento y robustez.</p>
+    </div>
+
+    <!-- Apartado de fotos 1 -->
+    <div class="portfolio-row">
+      <article class="portfolio-card">
+        <figure class="portfolio-media">
+          <img src="images/1.avif" alt="Dashboard Fintech con gráficos en tiempo real" loading="lazy">
+        </figure>
+        <div class="portfolio-info">
+          <h3 class="card-title">Dashboard Fintech</h3>
+          <p class="card-text">
+            Interfaz financiera con gráficos en tiempo real. Latencia baja, autenticación robusta y diseño accesible para usuarios intensivos.
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Stack:</strong> React, Node.js, WebSockets.</li>
+            <li><strong>Rendimiento:</strong> SSR y caché distribuida.</li>
+            <li><strong>Seguridad:</strong> JWT, RBAC, auditoría.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Apartado de fotos 2 -->
+    <div class="portfolio-row">
+      <article class="portfolio-card">
+        <figure class="portfolio-media">
+          <img src="images/2.avif" alt="Plataforma educativa interactiva con UI modular" loading="lazy">
+        </figure>
+        <div class="portfolio-info">
+          <h3 class="card-title">Plataforma Educativa</h3>
+          <p class="card-text">
+            UI modular con contenidos interactivos, seguimiento de progreso y evaluación automática. Escalable a miles de estudiantes.
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Stack:</strong> Vue, Python (FastAPI), Postgres.</li>
+            <li><strong>Escala:</strong> Contenedores y balanceo.</li>
+            <li><strong>Accesibilidad:</strong> AA/AAA y navegación clara.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Apartado de fotos 3 -->
+    <div class="portfolio-row">
+      <article class="portfolio-card">
+        <figure class="portfolio-media">
+          <img src="images/3.avif" alt="Suite interna para equipos con colaboración en tiempo real" loading="lazy">
+        </figure>
+        <div class="portfolio-info">
+          <h3 class="card-title">Suite Interna</h3>
+          <p class="card-text">
+            Herramientas internas de colaboración en tiempo real con permisos, auditoría y experiencias fluidas en múltiples dispositivos.
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Stack:</strong> Svelte, Go, Redis.</li>
+            <li><strong>Observabilidad:</strong> Métricas, trazas y alertas.</li>
+            <li><strong>DevOps:</strong> CI/CD y despliegues diarios.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= Stack tecnológico ========= -->
+  <section id="stack" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Stack tecnológico</h2>
+      <p class="subtitle-sm">Herramientas y estándares que utilizamos para entregar valor de forma consistente.</p>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <div class="stack-badge">React</div>
+        <p class="card-text">Componentes reutilizables, SSR/SSG, rendimiento y ecosistema maduro.</p>
+      </div>
+      <div class="stack-item">
+        <div class="stack-badge">Node.js</div>
+        <p class="card-text">APIs rápidas, Io, streaming y tooling eficiente para backend.</p>
+      </div>
+      <div class="stack-item">
+        <div class="stack-badge">Python</div>
+        <p class="card-text">Servicios backend con FastAPI/Django y integración de datos.</p>
+      </div>
+      <div class="stack-item">
+        <div class="stack-badge">Go</div>
+        <p class="card-text">Microservicios concurrentes y binarios ligeros de alto desempeño.</p>
+      </div>
+      <div class="stack-item">
+        <div class="stack-badge">Postgres</div>
+        <p class="card-text">Datos relacionales confiables y seguros con migraciones controladas.</p>
+      </div>
+      <div class="stack-item">
+        <div class="stack-badge">Docker</div>
+        <p class="card-text">Entornos aislados, consistentes y reproducibles para despliegue.</p>
+      </div>
+    </div>
+    <div class="stack-visual">
+      <div class="node node-a"></div>
+      <div class="node node-b"></div>
+      <div class="node node-c"></div>
+      <div class="link link-ab"></div>
+      <div class="link link-bc"></div>
+      <div class="link link-ca"></div>
+    </div>
+  </section>
+
+  <!-- ========= Casos de estudio ========= -->
+  <section id="casos" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Casos de estudio</h2>
+      <p class="subtitle-sm">Procesos y resultados que explican nuestro enfoque.</p>
+    </div>
+    <div class="case-grid">
+      <article class="case-card">
+        <h3 class="card-title">Optimización de rendimiento</h3>
+        <p class="card-text">
+          Redujimos el TTI de 3.5s a 1.6s aplicando bundle splitting, prefetching y políticas de caché agresivas con invalidación fina.
+        </p>
+        <div class="metric-bar">
+          <span class="metric-label">TTI</span>
+          <div class="metric-track">
+            <div class="metric-fill" style="width: 65%"></div>
+          </div>
+        </div>
+      </article>
+      <article class="case-card">
+        <h3 class="card-title">Seguridad por defecto</h3>
+        <p class="card-text">
+          Implementamos validaciones, sanitización y monitoreo de integridad. Se mitigaron inyecciones y escaladas de privilegios.
+        </p>
+        <div class="metric-bar">
+          <span class="metric-label">Incidentes</span>
+          <div class="metric-track">
+            <div class="metric-fill success" style="width: 12%"></div>
+          </div>
+        </div>
+      </article>
+      <article class="case-card">
+        <h3 class="card-title">Entrega continua</h3>
+        <p class="card-text">
+          Releases diarios con pipelines paralelos, tests y despliegues canarios. Retroalimentación rápida y ciclos cortos.
+        </p>
+        <div class="metric-bar">
+          <span class="metric-label">Frecuencia</span>
+          <div class="metric-track">
+            <div class="metric-fill warn" style="width: 88%"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= Equipo (sin fotos, con avatares generados por CSS) ========= -->
+  <section id="equipo" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Equipo</h2>
+      <p class="subtitle-sm">Pequeño, enfocado y multidisciplinario.</p>
+    </div>
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="avatar avatar-1"></div>
+        <h3 class="card-title">Líder Frontend</h3>
+        <p class="card-text">Diseña sistemas de componentes, microinteracciones y accesibilidad.</p>
+        <ul class="bullet-list">
+          <li><strong>Foco:</strong> UI/UX, performance, semántica.</li>
+          <li><strong>Herramientas:</strong> React, Svelte, Tailwind.</li>
+        </ul>
+      </article>
+      <article class="team-card">
+        <div class="avatar avatar-2"></div>
+        <h3 class="card-title">Arquitecto Backend</h3>
+        <p class="card-text">Define contratos, flujos de datos y resiliencia del sistema.</p>
+        <ul class="bullet-list">
+          <li><strong>Foco:</strong> APIs, seguridad, observabilidad.</li>
+          <li><strong>Herramientas:</strong> Node.js, Python, Go.</li>
+        </ul>
+      </article>
+      <article class="team-card">
+        <div class="avatar avatar-3"></div>
+        <h3 class="card-title">DevOps Engineer</h3>
+        <p class="card-text">Automatiza pipelines, despliegues y monitoreo integral.</p>
+        <ul class="bullet-list">
+          <li><strong>Foco:</strong> CI/CD, contenedores, cloud.</li>
+          <li><strong>Herramientas:</strong> Docker, K8s, Grafana.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= Contacto ========= -->
+  <section id="contacto" class="section">
+    <div class="section-header">
+      <h2 class="title-lg">Contacto</h2>
+      <p class="subtitle-sm">Cuéntanos sobre tu proyecto. Respondemos en menos de 24 horas.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form" aria-label="Formulario de contacto">
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="form-row">
+          <label for="proyecto">Proyecto</label>
+          <select id="proyecto" name="proyecto">
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="fullstack">Fullstack</option>
+            <option value="devops">DevOps</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe tu idea, metas y plazos."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </div>
+        <p class="form-note">Al enviar aceptas nuestra política de privacidad y uso de datos.</p>
+      </form>
+      <aside class="contact-aside">
+        <div class="aside-card">
+          <h3 class="card-title">Información</h3>
+          <p class="card-text">
+            Trabajamos en remoto y presencial. Proyectos por sprints, presupuestos claros y reportes de avance.
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Horario:</strong> L-V, 9:00–18:00</li>
+            <li><strong>Ubicación:</strong> Maracaibo / Remoto</li>
+            <li><strong>Idioma:</strong> Español, Inglés</li>
+          </ul>
+        </div>
+        <div class="aside-card">
+          <h3 class="card-title">Garantías</h3>
+          <p class="card-text">Entregables versionados, documentación y soporte post-lanzamiento.</p>
+          <ul class="bullet-list">
+            <li><strong>Soporte:</strong> 30–90 días según alcance.</li>
+            <li><strong>Calidad:</strong> Auditoría de performance y seguridad.</li>
+            <li><strong>Transparencia:</strong> KPIs y panel de seguimiento.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========= Footer ========= -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-mark">G</div>
+        <div class="brand-text">
+          <strong>Guss Sys</strong>
+          <span>Software que inspira confianza</span>
+        </div>
+      </div>
+      <nav class="footer-links">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-legal">
+        <span>© 2025 Guss Sys</span>
+        <a href="#" class="legal-link">Privacidad</a>
+        <a href="#" class="legal-link">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========= Script mínimo para panel móvil ========= -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const panel = document.querySelector('.mobile-panel');
+    const links = panel.querySelectorAll('.mobile-link');
+
+    function togglePanel() {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      panel.classList.toggle('open');
+      document.body.classList.toggle('no-scroll', !expanded);
+    }
+
+    hamburger.addEventListener('click', togglePanel);
+    links.forEach(l => l.addEventListener('click', () => {
+      panel.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('no-scroll');
+    }));
+
+    window.addEventListener('load', () => {
+      const pre = document.getElementById('preloader');
+      pre?.classList.add('hide');
+      setTimeout(() => pre?.remove(), 600);
+    });
+  </script>
+</body>
+</html>
